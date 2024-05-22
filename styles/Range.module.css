@@ -1,0 +1,65 @@
+.rangeContainer {
+  width: 90%;
+  margin: 20px;
+}
+
+.rangeLabels {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rangeLabels input {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #4198c6;
+  padding: 2px;
+}
+
+.rangeSliderContainer {
+  position: relative;
+  height: 50px;
+}
+
+.rangeSlider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: #4198c6;
+  border-radius: 5px;
+  transform: translateY(-50%);
+}
+
+.rangeBullet {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #23262c;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.rangeBullet:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.fixedValues {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(10px);
+}
+
+.valueLabel {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
